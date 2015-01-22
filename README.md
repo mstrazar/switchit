@@ -20,9 +20,8 @@ Quick start
 We provide models for classic mutual repressor switch (toggle) and the positive feedback loop switch.
 
 Run the simulations by running the script
-	```
+	```octave
 	run.m
-
 	```
 
 inside appropriate MATLAB/Octave interpreter.
