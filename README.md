@@ -50,10 +50,10 @@ To run a stochastic model, cd to the stochastic directory
 	```
 
 Compile all models
-	```
-	chmod 755 make.sh
-	./make.sh
-	```
+```
+chmod 755 make.sh
+./make.sh
+```
 
 Run all models
 
