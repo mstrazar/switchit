@@ -57,7 +57,8 @@ Compile all models
 
 Run all models
 
-	```chmod 755 run.sh
+	```
+	chmod 755 run.sh
 	run.sh
 	```
 
