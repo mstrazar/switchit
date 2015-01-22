@@ -20,7 +20,7 @@ Quick start
 We provide models for classic mutual repressor switch (toggle) and the positive feedback loop switch.
 
 Run the simulations by running the script
-	```octave
+	```
 	run.m
 	```
 
@@ -58,6 +58,8 @@ Compile all models
 Run all models
 	```
 	chmod 755 run.sh
+
+	run.sh
 	```
 
 The results will be stored in the folder output, containing the tab-separated files with rows of reporter concentrations at each iteration and columns defined as follows:
