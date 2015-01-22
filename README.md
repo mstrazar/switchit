@@ -58,7 +58,7 @@ chmod 755 make.sh
 Run all models
 ```
 chmod 755 run.sh
-run.sh
+./run.sh
 ```
 
 The results will be stored in the folder output, containing the tab-separated files with rows of reporter concentrations at each iteration and columns defined as follows:
