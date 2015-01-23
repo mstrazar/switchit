@@ -73,28 +73,27 @@ int main(int argc, char *argv[]){
     
     //Parameters
 	float ta                = 1.0*vector[0];					//binding probability
-	float tda				= 0.0001*vector[1];                 //unbinding probability
+	float tda				= 0.0001*vector[1];                 //dissociation probability
 	float tb                = 1.0*vector[2];                    //binding probability
-	float tdb				= 0.0001*vector[3];                 //unbinding probability
+	float tdb				= 0.0001*vector[3];                 //dissociation probability
 	float tdg				= 0.00001*vector[4];                //degradation probability
 	float r_vp16_vp16		= 0.0001*vector[5];                 //fully activated transcription
 
 	float r_vp16_krab		= 0.01*r_vp16_vp16*vector[12];		//competitive binding
 
-	// float tk                = 4.0*vector[14];					//KRAB right of way
-	float tk                = 3.0526*vector[14];					//KRAB right of way; Determined using min RMSE;
+	float tk                = 3.0526*vector[14];					//KRAB competition factor; Determined using min RMSE;
 
 	// float rdg				= 0.00001*vector[6];				//reporter degradation
 	// float rdg			= 0.000006*vector[6];				//reporter degradation
     float rdg				= 0.000003*vector[6];				//reporter degradation
 
-	float cta				= 0.5*r_vp16_vp16*0.1*vector[10];	//constitutive promoter transcription, LOWER FREQUENCY
-    //float cmv				= 0.5*r_vp16_vp16*vector[10];	    //constitutive promoter transcription, LOWER FREQUENCY
-    float cmv				= r_vp16_vp16;	                    //constitutive promoter transcription, LOWER FREQUENCY
+	float cta				= 0.5*r_vp16_vp16*0.1*vector[10];	//constitutive promoter transcription
+    //float cmv				= 0.5*r_vp16_vp16*vector[10];	    //constitutive promoter transcription
+    float cmv				= r_vp16_vp16;	                    //constitutive promoter transcription
     float cmv_a             = 10.0;                             //activated cmv
     float cmv_ar            = 2.0;                              //activated/reppressed cmv
     float cmv_leak          = 0.01;
-    //float cta				= 1.0;	                            //constitutive promoter transcription, LOWER FREQUENCY
+    //float cta				= 1.0;	                            //constitutive promoter transcription
 
 	float p_leak_pir		= 1.0*0.1*vector[7];				//pir promotor leakage
 	float p_leak_etr		= 1.0*0.1*vector[8];				//etr promotor leakage
